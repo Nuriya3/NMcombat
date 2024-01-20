@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NMcombat</title>
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: Black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3A3B3C;
+}
+
+ 
+.container {
+  border-radius: 5px;
+  background-color: #FFFF33;
+  padding: 10px;
+}
+
+ 
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ 
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+table, th, td {
+  border:1px solid yellow;
+  color: white;
+  text-align: center;
+  margin-left: auto; 
+  margin-right: auto;
+ 
+
+}
+
+body{
+  background-color: #454545;
+}
+
+p, h2 {
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFF33;
+  color: black;
+
+}
+
+li {
+  float: left;
+  color: black;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #FFFFF7;
+}
+
+.active {
+  background-color: #FFFEFA;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFFF33;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFF33;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #36454F;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+</head>
+<body>
+
+<img src="images\NM.png" width="100%" height="350">
+<ul>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\index.html">Home</a></li>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\offers01.html">Offers</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Classes</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\martial01.html">Martial</a>
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\fitness01.html">Fitness</a>
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\facilities01.html">Facilities</a>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\shop011.html">Shop</a></li>
+  <li><a href="#Contactus">Contact us</a></li>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\aboutus01.html">About us</a></li>
+      
+    </div>
+  </li>
+ 
+  <li style="float:right"><a class="active" href="C:\Users\nuriy\OneDrive\Documents\webproject01\lognsign01.html">Join us</a></li>
+  
+</ul>
+<br><br><br>
+
+<h2>*View Our Timetable*</h2>
+
+<p>Explore our comprehensive timetable to plan your fitness journey with a diverse range of classes tailored to suit all levels and preferences.</p> <br><br>
+
+
+
+
+<h2 style="text-align:center;">Classes timetable</h2>
+
+
+
+ <table style="height:50px" width="50%">
+    <tr>
+      <th>Time / Day</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr>
+      <th>06:00-07:30</th>
+      <td>jiu-jitsu</td>
+      <td>Karate</td>
+      <td>Judo</td>
+      <td>jiu-jitsu</td>
+      <td>Muay Thai</td>
+      <td> </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>08:00-10:00</th>
+      <td>Muay Thai</td>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+      <td>jiu-jitsu</td>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+    </tr>
+    <tr>
+      <th>10:30-12:00</th>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+      <td>Private tuition</td>
+      <td>Judo</td>
+      <td>Karate</td>
+    </tr>
+    <tr>
+      <th>13:00-14:00</th>
+      <td>Open mat/ Personal practice</td>
+      <td>Open mat/ Personal practice</td>
+      <td>Open mat/ Personal practice</td>
+      <td>Open mat/ Personal practice</td>
+      <td>Open mat/ Personal practice</td>
+      <td>Karate</td>
+      <td>Judo</td>
+    </tr>
+    <tr>
+      <th>15:00-17:00</th>
+      <td>Kids jiu-jitsu</td>
+      <td>Kids Judo</td>
+      <td>Kids Karate</td>
+      <td>Kids jiu-jitsu</td>
+      <td>Kids Judo</td>
+      <td>Muay Thai</td>
+      <td>jiu-jitsu</td>
+    </tr>
+    <tr>
+      <th>17:30-19:00</th>
+      <td>Karate</td>
+      <td>Muay Thai</td>
+      <td>Judo</td>
+      <td>Jiu-Jitsu</td>
+      <td>Muay Thai</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19:00-21:00</th>
+      <td>jiu-jitsu</td>
+      <td>Judo</td>
+      <td>Jiu-jitsu</td>
+      <td>Karate</td>
+      <td>Private tuition</td>
+      <td></td>
+      <td></td>
+    </tr>
+</table>
+ 
+
+
+
+
+<br><br><br>
+
+<div class="container" id="Contactus">
+  <div style="text-align:center" >
+    <h3 color="black">Contact Us</h3>
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images\h-gym.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="Inquiry">Inquiry about: </label>
+        <select id="Inquiry" name="Inquiry">
+          <option value="Training">Training</option>
+          <option value="Facilities">Facilities</option>
+          <option value="complaint">complaint</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your message.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" >
+        
+         <h4>Or call us via : +966 530600500<br>
+        Our location: Al Olaya King Fahad Road, Riyadh, Saudi Arabia</h4>
+
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+	
+ document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Your message was sent successfully, thank you!');
+    });
+  });
+</script>
+</body>
+</html>
+
+

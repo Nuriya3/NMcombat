@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>NMcombat</title>
+
+<style> 
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#454545;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: Black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3A3B3C;
+}
+
+ 
+.container {
+  border-radius: 5px;
+  background-color: #FFFF33;
+  padding: 10px;
+}
+
+ 
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ 
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+body{
+  background-color: #454545;
+}
+
+p, h2, h1 {
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFF33;
+  color: black;
+
+}
+
+li {
+  float: left;
+  color: black;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #FFFFF7;
+}
+
+.active {
+  background-color: #FFFEFA;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFFF33;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFF33;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #36454F;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ 
+   
+ 
+
+
+/* -------- PRODUCT SECTION ----------- */
+.section-3 {
+  display: grid;
+  place-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+}
+.product {
+  cursor: pointer;
+  background-color: var(--white-color-alt);
+  position: relative;
+}
+.product::before {
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    hsla(60, 100%, 60%, 0.438),
+    hsla(60, 100%, 60%, 0.507)
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.product_add_cart {
+  color: var(--white-color-alt);
+  font-size: 1.2rem;
+  background-color: #FFFF33;
+  padding: 1rem 0.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms, color 300ms, box-shadow 300ms;
+}
+.product_add_cart:hover {
+  color: var(--white-color);
+  box-shadow: 0 1rem 0 -0.5rem hsl(60, 100%, 60%, 0.7),
+    0 2rem 0 -1rem hsla(60, 100%, 60%, 0.65);
+}
+
+
+
+
+
+  /* -------- PRODUCT SECTION ----------- */
+  .section-3 {
+    gap: 5rem;
+  }
+  .product::before {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 300ms;
+  }
+  .product:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 300ms;
+  }
+  .product_add_cart {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  .product:hover .product_add_cart {
+    transform: translate(-50%, -50%) scaleY(1);
+    transform-origin: top;
+  }
+ 
+
+
+</style>
+</head>
+
+
+<body>
+
+ 
+<img src="images\NM.png" width="100%" height="350">
+<ul>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\index.html">Home</a></li>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\offers01.html">Offers</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Classes</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\martial01.html">Martial</a>
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\fitness01.html">Fitness</a>
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\facilities01.html">Facilities</a>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\shop011.html">Shop</a></li>
+  <li><a href="#Contactus">Contact us</a></li>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\aboutus01.html">About us</a></li>
+      
+    </div>
+  </li>
+ 
+  <li style="float:right"><a class="active" href="C:\Users\nuriy\OneDrive\Documents\webproject01\lognsign01.html">Join us</a></li>
+  
+</ul>
+
+
+
+ <br>
+  <br><br>
+
+
+  <main>
+  
+      <div>
+        <h1>NMcombat shop</h1>
+        <h2>
+         Elavate your fitness journey with our premium gear, where strength meets style at our shop.
+        </h2><br><br><br><br><br>
+      </div>
+      
+
+   
+
+    <!-- PRODUCT SECTION -->
+<section class="section-3">
+  <!-- product - 1 -->
+  <div class="product product-1"><p align="center">£10.00</p>
+    <img src="images\boxinggloves.jpg" width="350" height="350" class="product-img">
+    <span class="product_add_cart" onclick="addToCart('Boxing Gloves')">ADD TO CART</span>
+  </div>
+  <!-- product - 2 -->
+  <div class="product product-2"><p align="center">£15.00</p>
+    <img src="images\Dumbell.jpg" width="350" height="350" class="product-img">
+    <span class="product_add_cart" onclick="addToCart('Dumbell')">ADD TO CART</span>
+  </div>
+  <!-- product - 3 -->
+  <div class="product product-3"><p align="center">£25.00</p>
+    <img src="images\karateoutfit.jpg" width="350" height="350" class="product-img">
+    <span class="product_add_cart" onclick="addToCart('Karate Outfit')">ADD TO CART</span>
+  </div>
+  <!-- product - 4 -->
+  <div class="product product-4"><p align="center">£30.00</p>
+    <img src="images\protein.jpg" width="350" height="350" class="product-img">
+    <span class="product_add_cart" onclick="addToCart('Protein')">ADD TO CART</span>
+  </div>
+</section>
+
+
+
+    
+ <br>
+  <br><br> <br>
+  <br><br> <br>
+  <br><br> <br>
+  <br><br> <br>
+  <br><br>
+  
+<div class="container" id="Contactus">
+  <div style="text-align:center" >
+    <h3 color="black">Contact Us</h3>
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images\h-gym.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="Inquiry">Inquiry about: </label>
+        <select id="Inquiry" name="Inquiry">
+          <option value="Training">Training</option>
+          <option value="Facilities">Facilities</option>
+          <option value="complaint">complaint</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your message.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" >
+        
+         <h4>Or call us via : +966 530600500<br>
+        Our location: Al Olaya King Fahad Road, Riyadh, Saudi Arabia</h4>
+        
+      </form>
+    </div>
+  </div>
+</div>
+  
+  <script>
+  
+  
+'use strict'
+
+const menuToggle = document.querySelector('.menu-toggle');
+const bxMenu = document.querySelector('.bx-menu');
+const bxX = document.querySelector('.bx-x');
+
+const navBar = document.querySelector('.navbar');
+
+
+
+bxMenu.addEventListener('click', (e)=> {
+    if(e.target.classList.contains('bx-menu')){
+        navBar.classList.add('show-navbar');
+        bxMenu.classList.add('hide-bx');
+        bxX.classList.add('show-bx');
+    }
+})
+
+
+
+bxX.addEventListener('click', (e)=> {
+    if(e.target.classList.contains('bx-x')){
+        navBar.classList.remove('show-navbar');
+        bxMenu.classList.remove('hide-bx');
+        bxX.classList.remove('show-bx');
+    }
+})
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Your message was sent successfully, thank you!');
+    });
+  });
+  
+  function addToCart(productName) {
+    alert('(YOUR RECEIPT)\n Successfully added ' + productName + ' to your cart!\n kindly collect it from the gym');
+    
+  }
+  </script>
+  
+</body>
+</html>
+

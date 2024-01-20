@@ -1,0 +1,448 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<title>NMcombat</title>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+ 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+ 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body{
+  background-color: #454545;
+}
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #454545;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: Black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3A3B3C;
+}
+
+ 
+.container {
+  border-radius: 5px;
+  background-color: #FFFF33;
+  padding: 10px;
+}
+
+ 
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ 
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+p, h2 {
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFF33;
+  color: black;
+
+}
+
+li {
+  float: left;
+  color: black;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #FFFFF7;
+}
+
+.active {
+  background-color: #FFFEFA;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFFF33;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFF33;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #36454F;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.container1 {
+  display: flex;
+  align-items: left;
+  justify-content: left}
+ 
+
+.goleft{
+color: white;
+ font-size: 20px;
+  padding-left: 110px;
+}
+
+
+
+h1.five {
+  border-style: outset;
+  border-width: 10px;
+  border-color: #FFFF33;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<img src="images\NM.png" width="100%" height="350px">
+<ul>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\index.html">Home</a></li>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\offers01.html">Offers</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Classes</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\martial01.html">Martial</a>
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\fitness01.html">Fitness</a>
+      <a href="C:\Users\nuriy\OneDrive\Documents\webproject01\facilities01.html">Facilities</a>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\shop011.html">Shop</a></li>
+  <li><a href="#Contactus">Contact us</a></li>
+  <li><a href="C:\Users\nuriy\OneDrive\Documents\webproject01\aboutus01.html">About us</a></li>
+      
+    </div>
+  </li>
+ 
+  <li style="float:right"><a class="active" href="C:\Users\nuriy\OneDrive\Documents\webproject01\lognsign01.html">Join us</a></li>
+  
+</ul>
+
+
+<br><br><br>
+
+ <h1 class="five">What's new?</h1><br><br><br>
+<div class="goleft">
+  <div class="container1">
+
+  <img src="images\personaltrainer.jpg" width="250px" height="350px"><pre>
+  <p>
+
+        New private room is available!   
+
+        Transform your fitness with 
+        personalized excellence. 
+        Subscribe to private training
+        for a journey tailored just  
+        for you!
+
+        With our new coach Lucas McCall.    </p>
+    </pre>
+</div></div>
+
+<br><br><br><br><br><br>
+
+<pre>
+<h2>                                                  
+                Dive into a complete wellness experience at our state-of-the-art facilities.
+                Luxuriate in spacious changing rooms, refresh in modern shower  facilities,
+                and unwind in the tranquil sauna and steam room. Make a splash in our sparkling
+                swimming pool, adding a refreshing dimension to your fitness routine. 
+                Plus, discover our new private training room – a dedicated space for personalized 
+                fitness journeys, combining luxury and exclusivity for your ultimate well-being.</h2>
+</pre>
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images\changingroom.jpg" style="width:100%">
+  <div class="text">Changing room</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images\Sauna_2.jpg" style="width:100%">
+  <div class="text">Sauna & Steam room</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images\showerroom.jpg"style="width:100%">
+  <div class="text">Showr room</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images\swimmingpool.jpg"style="width:100%">
+  <div class="text">Swimming pool</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images\privateroom.jpg"style="width:100%">
+  <div class="text">Private room</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<br><br><br><br><br>
+
+
+<div class="container" id="Contactus">
+  <div style="text-align:center" >
+    <h3 color="black">Contact Us</h3>
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images\h-gym.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="Inquiry">Inquiry about: </label>
+        <select id="Inquiry" name="Inquiry">
+          <option value="Training">Training</option>
+          <option value="Facilities">Facilities</option>
+          <option value="complaint">complaint</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your message.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" >
+        
+         <h4>Or call us via : +966 530600500<br>
+        Our location: Al Olaya King Fahad Road, Riyadh, Saudi Arabia</h4>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  
+ document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Your message was sent successfully, thank you!');
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+</html>
